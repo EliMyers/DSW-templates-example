@@ -6,5 +6,23 @@
 
 {% block content %}
     <!--page content-->
-    <h1>Page 1</h1>
+    <h1>Food Recommender</h1>
+	<h2 id = "based">Based on your responses:</h2>
+	<p class = "responses">{{ response1 }}</p>
+	<p class = "responses">{{ response2 }}</p>
+	<p class = "responses">{{ response3 }}</p>
+
+	
+	<!-- <img src="{{ url_for('static', filename='cake.png') }}" alt="cake" class = "p1Image"> -->
+
+	
+	<!-- <div class="container mt-3">
+  <p>Is this correct?</p>
+  <form action="/p2">
+	 <button type="submit" class="btn btn-primary mt-3">Yes</button>
+  </form>
+  <form action="/">
+	 <button type="submit" class="btn btn-primary mt-3">No</button>
+  </form>
+</div> -->
 {% endblock %}

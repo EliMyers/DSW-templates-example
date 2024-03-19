@@ -6,5 +6,41 @@
 
 {% block content %}
     <!--page content-->
-    <h1>Home Page</h1>
+	
+ <h1> Food Recommender </h1>
+	<div class = "form-div">
+<div class="container mt-3">
+  <h2>Country</h2>
+  <p>Select the country you'd like food from:</p>
+  <form action="/response">
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="America" name="Country" value="America" checked>
+      <label class="form-check-label" for="America">America</label>
+    </div>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="Italy" name="Country" value="Italy">
+      <label class="form-check-label" for="Italy">Italy</label>
+    </div>
+	<div class="form-check">
+      <input type="radio" class="form-check-input" id="Mexico" name="Country" value="Mexico">
+      <label class="form-check-label" for="Mexico">Mexico</label>
+    </div>
+</div>
+
+
+<div class="container mt-3">
+  <h2>Main Course or Dessert</h2>
+  <p>Do you want a main course or dessert?</p>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="Main" name="type" value="Main" checked>
+      <label class="form-check-label" for="Main">Main Course</label>
+    </div>
+    <div class="form-check">
+      <input type="radio" class="form-check-input" id="Dessert" name="type" value="Dessert">
+      <label class="form-check-label" for="type">Dessert</label>
+    </div>
+	 <button type="submit" class="btn btn-primary mt-3">Submit</button>
+  </form>
+</div>
+</div>
 {% endblock %}
